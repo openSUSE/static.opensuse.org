@@ -1,0 +1,9 @@
+[submodule "hosts/www.o.o"]
+	path = hosts/www.o.o
+	url = https://github.com/openSUSE/old-landing-page.git
+[submodule "login"]
+	path = login
+	url = https://github.com/openSUSE/openSUSE-login
+[submodule "themes"]
+	path = themes
+	url = https://github.com/openSUSE/opensuse-themes

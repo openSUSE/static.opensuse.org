@@ -1,0 +1,33 @@
+==Welcome to skintest.opensuse.org==
+
+This wiki is used to develop and test the new skin for opensuse.org.
+
+===Tags, Content Elements and Structure Elements===
+*[[Tagformatting|Tag Formatting]]
+*[[Structural Elements]]
+*[[Content Elements]]
+
+To view some of the following pages you need to be logged in.
+
+===Special Pages===
+*[[Special:Preferences]]
+*[[Special:Log]]
+*[[Special:Recentchanges]]
+*[[Spezial:Allmessages]]
+*[[Special:Imagelist]]
+*[[Special:Newimages]]
+*[[Special:Watchlist]]
+*[[Special:Statistics]]
+
+===Article Subpages===
+*[[Talk:Tagformatting]]
+*[http://{{SERVERNAME}}/index.php?title=Tagformatting&action=edit Edit Page]
+*[http://{{SERVERNAME}}/index.php?title=Tagformatting&action=history History page]
+*[http://{{SERVERNAME}}/index.php?title=Tagformatting&diff=28&oldid=20 Diff page]
+
+===Other Pages===
+*[[:Image:Note.png| Image Page]]
+*[[:Category:Icons]]
+
+[[en:Main Page]]
+

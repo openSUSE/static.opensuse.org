@@ -1,0 +1,474 @@
+__TOC__
+==Columns==
+
+===Two Columns===
+
+Classes for two column layouts are already predefined. The allow to divide the content part into the following ratios:
+
+* 75% / 25% (Classes <tt>c75l</tt> and <tt>c25r</tt>)
+* 66% / 33% (Classes <tt>c66l</tt> and <tt>c33r</tt>)
+* 62% / 38% (Classes <tt>c62l</tt> und <tt>c38r</tt>)
+* 50% / 50% (Classes <tt>c50l</tt> and <tt>c50r</tt>)
+* 38% / 62% (Classes <tt>c38l</tt> und <tt>c62r</tt>)
+* 33% / 66% (Classes <tt>c33l</tt> and <tt>c66r</tt>)
+* 25% / 75% (Classes <tt>c25l</tt> and <tt>c75r</tt>)
+
+Nesting column classes is possible.
+
+<div class="subcolumns">
+<div class="c62l">
+<div class="subcl">
+<span style="font-size:larger; font-weight: bold;">Left Column (62%)</span>
+<br />
+<br />
+This is the left column. It is 62% wide. This is the left column. It is 62% wide. This is the left column. It is 62% wide. This is the left column. It is 62% wide. This is the left column. It is 62% wide. This is the left column. It is 62% wide.
+</div>
+</div>
+<div class="c38r">
+<div class="subcr">
+<span style="font-size:larger; font-weight: bold;">Right Column (38%)</span>
+<br />
+<br />
+This is the right column. It is 38% wide. This is the right column. It is 38% wide. This is the right column. It is 38% wide. This is the right column. It is 38% wide.
+</div>
+</div>
+</div>
+
+The code looks like this:
+
+<pre>
+<!-- 2 Columns, ratio 66/33 -->
+<div class="subcolumns">
+ <div class="c68l">
+  <div class="subcl">
+   ...Content left column...
+  </div>
+ </div>
+ <div class="c32r">
+  <div class="subcr">
+   ...Content right column...
+  </div>
+ </div>
+</div>
+</pre>
+
+===Three Columns===
+
+Classes for three column layouts are already predefined. The allow to divide the content part into a 33% ratio.
+
+<div class="subcolumns">
+<div class="c33l">
+<div class="subcl">
+<span style="font-size:larger; font-weight: bold;">Left Column (33%)</span>
+<br />
+<br />
+This is the left column. It is 33% wide. This is the left column. It is 33% wide. This is the left column. It is 33% wide.
+</div>
+</div>
+<div class="c33l">
+<div class="subc">
+<span style="font-size:larger; font-weight: bold;">Middle Column (33%)</span>
+<br />
+<br />
+This is the middle column. It is 33% wide. This is the middle column. It is 33% wide. This is the middle column. It is 33% wide.
+</div>
+</div>
+<div class="c33r">
+<div class="subcr">
+<span style="font-size:larger; font-weight: bold;">Right Column (33%)</span>
+<br />
+<br />
+This is the right column. It is 33% wide. This is the right column. It is 33% wide. This is the right column. It is 33% wide. This is the right column. It is 33% wide.
+</div>
+</div>
+</div>
+
+The code looks like this:
+
+<pre>
+<!-- 3 Columns, ratio 33/33/33 -->
+<div class="subcolumns">
+ <div class="c33l">
+  <div class="subcl">
+   ...Content left column...
+  </div>
+ </div>
+ <div class="c33l">
+  <div class="subc">
+   ...Content middle column...
+  </div>
+ </div>
+ <div class="c32r">
+  <div class="subcr">
+   ...Content right column...
+  </div>
+ </div>
+</div>
+</pre>
+
+==Boxes==
+
+The boxes from the left menu can be used within the content area, too. They consist of a header and footer providing the round corners, an optional colored title bar, an optional colored footer and the content area. Therefore the box layout is very flexible with various combinations. Preferably use the boxes in combination with [[Structural_Elements#Columns|Columns]]. 
+
+===Simple boxes===
+
+<div class="subcolumns">
+<div class="c50l">
+<div class="subcl">
+<div class="green_box">
+<div class="box_top_row">
+<div class="box_left"></div>
+<div class="box_right"></div>
+</div>
+<div class="box_title_row">
+<div class="box_title">A Green Box</div>
+</div>
+<div class="box_content">
+This is the content area of the green box. Any type of wiki/HTML markup may go here.
+</div>
+<div class="box_bottom_row">
+<div class="box_left"></div>
+<div class="box_right"></div>
+</div>
+</div>  
+</div>
+</div>
+<div class="c50r">
+<div class="subcr">
+<div class="grey_box">
+<div class="box_top_row">
+<div class="box_left"></div>
+<div class="box_right"></div>
+</div>
+<div class="box_title_row">
+<div class="box_title">A Gray Box</div>
+</div>
+<div class="box_content">
+This is the content area of the gray box. Any type of wiki/HTML markup may go here.
+</div>
+<div class="box_bottom_row">
+<div class="box_left"></div>
+<div class="box_right"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+The Code looks like this:
+
+<div class="subcolumns">
+<div class="c50l">
+<div class="subcl">
+<pre>
+<div class="green_box">
+ <div class="box_top_row">
+  <div class="box_left"></div>
+  <div class="box_right"></div>
+ </div>
+ <div class="box_title_row">
+  <div class="box_title">
+   ...Box title...
+  </div>
+ </div>
+ <div class="box_content">
+  ...Content...
+ </div>
+ <div class="box_bottom_row">
+  <div class="box_left"></div>
+  <div class="box_right"></div>
+ </div>
+</div>
+</pre>
+</div>
+</div>
+<div class="c50r">
+<div class="subcr">
+<pre>
+<div class="grey_box">
+ <div class="box_top_row">
+  <div class="box_left"></div>
+  <div class="box_right"></div>
+ </div>
+ <div class="box_title_row">
+  <div class="box_title">
+   ...Box title...
+  </div>
+ </div>
+ <div class="box_content">
+  ...Content...
+ </div>
+ <div class="box_bottom_row">
+  <div class="box_left"></div>
+  <div class="box_right"></div>
+ </div>
+</div>
+</pre>
+</div>
+</div>
+</div>
+
+===Double Boxes===
+
+<div class="subcolumns">
+<div class="c50l">
+<div class="subcl">
+<div class="green_box_double">
+<div class="box_top_row">
+<div class="box_left"></div>
+<div class="box_right"></div>
+</div>
+<div class="box_title_row">
+<div class="box_title">A Green Double Box</div>
+</div>
+<div class="box_content">
+This is the content area of the green double box. Any type of wiki/HTML markup may go here.
+</div>
+<div class="box_footer_row">
+<div class="box_footer">...Green Double Box Footer...</div>
+</div>
+<div class="box_bottom_row">
+<div class="box_left"></div>
+<div class="box_right"></div>
+</div>
+</div>  
+</div>
+</div>
+<div class="c50r">
+<div class="subcr">
+<div class="grey_box_double">
+<div class="box_top_row">
+<div class="box_left"></div>
+<div class="box_right"></div>
+</div>
+<div class="box_title_row">
+<div class="box_title">A Gray Double Box</div>
+</div>
+<div class="box_content">
+This is the content area of the gray double box. Any type of wiki/HTML markup may go here.
+</div>
+<div class="box_footer_row">
+<div class="box_footer">...Gray Double Box Footer...</div>
+</div>
+<div class="box_bottom_row">
+<div class="box_left"></div>
+<div class="box_right"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+The Code looks like this:
+
+<div class="subcolumns">
+<div class="c50l">
+<div class="subcl">
+<pre>
+<div class="green_box_double">
+ <div class="box_top_row">
+  <div class="box_left"></div>
+  <div class="box_right"></div>
+ </div>
+ <div class="box_title_row">
+  <div class="box_title">
+   ...Box title...
+  </div>
+ </div>
+ <div class="box_content">
+  ...Content...
+ </div>
+ <div class="box_footer_row">
+  <div class="box_footer">
+   ...Footer...
+  </div>
+ </div>
+ <div class="box_bottom_row">
+  <div class="box_left"></div>
+  <div class="box_right"></div>
+ </div>
+</div>
+</pre>
+</div>
+</div>
+<div class="c50r">
+<div class="subcr">
+<pre>
+<div class="grey_box_double">
+ <div class="box_top_row">
+  <div class="box_left"></div>
+  <div class="box_right"></div>
+ </div>
+ <div class="box_title_row">
+  <div class="box_title">
+   ...Box title...
+  </div>
+ </div>
+ <div class="box_content">
+  ...Content...
+ </div>
+ <div class="box_footer_row">
+  <div class="box_footer">
+   ...Footer...
+  </div>
+ </div>
+ <div class="box_bottom_row">
+  <div class="box_left"></div>
+  <div class="box_right"></div>
+ </div>
+</div>
+</pre>
+</div>
+</div>
+</div>
+
+===Assembled Boxes===
+
+<div class="subcolumns">
+<div class="c50l">
+<div class="subcl">
+<div class="green_box">
+<div class="box_top_row">
+<div class="box_left"></div>
+<div class="box_right"></div>
+</div>
+<div class="box_title_row">
+<div class="box_title">An Assembled Green Box</div>
+</div>
+<div class="box_content">
+This is the content area of the green double box. Any type of wiki/HTML markup may go here.
+</div>
+<div class="box_title_row">
+<div class="box_title" style="padding-top: .5em">Subtitle 1</div>
+</div>
+<div class="box_content">
+This is another content area of the assembled green box. Any type of wiki/HTML markup may go here.
+</div>
+<div class="box_title_row">
+<div class="box_title" style="padding-top: .5em">Subtitle 2</div>
+</div>
+<div class="box_content">
+This is yet another content area of the assembled green box. Any type of wiki/HTML markup may go here.
+</div>
+<div class="box_bottom_row">
+<div class="box_left"></div>
+<div class="box_right"></div>
+</div>
+</div>  
+</div>
+</div>
+<div class="c50r">
+<div class="subcr">
+<div class="grey_box_double">
+<div class="box_top_row">
+<div class="box_left"></div>
+<div class="box_right"></div>
+</div>
+<div class="box_title_row">
+<div class="box_title">An Assembled Gray Double Box</div>
+</div>
+<div class="box_content">
+This is the content area of the gray double box. Any type of wiki/HTML markup may go here.
+</div>
+<div class="box_title_row">
+<div class="box_title" style="padding-top: .5em">Subtitle</div>
+</div>
+<div class="box_content">
+This is another content area of the assembled gray double box. Any type of wiki/HTML markup may go here.
+</div>
+<div class="box_footer_row">
+<div class="box_footer">...Assembled Gray Double Box Footer...</div>
+</div>
+<div class="box_bottom_row">
+<div class="box_left"></div>
+<div class="box_right"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+The Code looks like this:
+
+<div class="subcolumns">
+<div class="c50l">
+<div class="subcl">
+<pre>
+<div class="green_box">
+ <div class="box_top_row">
+  <div class="box_left"></div>
+  <div class="box_right"></div>
+ </div>
+ <div class="box_title_row">
+  <div class="box_title">
+   ...Box title...
+  </div>
+ </div>
+ <div class="box_content">
+  ...Content...
+ </div>
+ <div class="box_title_row">
+  <div class="box_title" style="padding-top: .5em">
+   ...Subtitle1...
+  </div>
+ </div>
+ <div class="box_content">
+  ...Content1...
+ </div>
+ <div class="box_title_row">
+  <div class="box_title" style="padding-top: .5em">
+   ...Subtitle2...
+  </div>
+ </div>
+ <div class="box_content">
+  ...Content2...
+ </div>
+ <div class="box_bottom_row">
+  <div class="box_left"></div>
+  <div class="box_right"></div>
+ </div>
+</div>
+</pre>
+</div>
+</div>
+<div class="c50r">
+<div class="subcr">
+<pre>
+<div class="grey_box_double">
+ <div class="box_top_row">
+  <div class="box_left"></div>
+  <div class="box_right"></div>
+ </div>
+ <div class="box_title_row">
+  <div class="box_title">
+   ...Box title...
+  </div>
+ </div>
+ <div class="box_content">
+  ...Content...
+ </div>
+ <div class="box_title_row">
+  <div class="box_title" style="padding-top: .5em">
+   ...Subtitle1...
+  </div>
+ </div>
+ <div class="box_content">
+  ...Content1...
+ </div>
+ <div class="box_footer_row">
+  <div class="box_footer">
+   ...Footer...
+  </div>
+ </div>
+ <div class="box_bottom_row">
+  <div class="box_left"></div>
+  <div class="box_right"></div>
+ </div>
+</div>
+</pre>
+</div>
+</div>
+</div>

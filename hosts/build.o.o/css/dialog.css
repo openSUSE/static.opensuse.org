@@ -1,0 +1,186 @@
+.dialog {
+  z-index: 90;
+  position: fixed;
+  top: 30%;
+  left: 40%;
+  height: 10em;
+  width: 24em;
+}
+
+#del_dialog {
+  top: 23% !important;
+}
+  
+.dialog#disable_mask {
+  z-index: 89;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background-image: url(/images/transparency_grey_20.png)
+}
+
+.dialog#delete_dialog {
+  border: 2px solid black;
+  background: #dddddd;
+}
+#del_dialog h3 {
+  margin: 1em auto 1em;
+
+
+  font-size: 1.2em;
+  color: #CCC;
+}
+.dialog .box_content {
+  width: 95%;
+  padding: 2%;
+  position: absolute;
+  height: 9em;
+  border-left: 1px solid #E0E0E0;
+  border-right: 1px solid #E0E0E0;
+  text-align: center; 
+  background-color: white;
+}
+
+ .heigh17em { /* it's just a workaround */
+   height: 23em !important;
+ }
+.dialog .box_content table { /* content of dialog box */
+  width:100%;
+} 
+  .dialog .box_content td {
+    height:6em;
+    text-align: center;
+    vertical-align: middle;
+  } 
+.dialog #list_usedrepo {
+  text-align: left;
+  height: 14em;
+  overflow: auto;
+  border-bottom: 1px solid #eee;
+}
+.dialog .box_top_row,
+.dialog .box_bottom_row {
+  background-image: none;
+}
+.dialog .box_middle,
+.dialog .box_bottom_row .box_middle{
+  float: left;
+  width: 94%;
+  height: 10px;
+  margin: 0 10px;
+  background:transparent url(/css/common/images/darkgrey_box/top_middle.png) repeat-x scroll left bottom;
+}
+.dialog .box_bottom_row .box_middle {
+   background: transparent url(/css/common/images/darkgrey_box/bottom_middle_darkgrey.png) repeat-x scroll left bottom;
+ }
+.dialog .box_bottom_row .box_right,
+.dialog .box_bottom_row .box_left,
+.dialog .box_top_row .box_right,
+.dialog .box_top_row .box_left {
+  position: absolute;
+}
+.dialog .box_top_row .box_right,
+.dialog .box_bottom_row .box_right{
+  position: absolute;
+  right: auto;
+  left: 0;
+  background: transparent url(/css/local/images/darkgrey_box/top_left_corner.png) no-repeat scroll right bottom;
+}
+.dialog .box_top_row .box_left,
+.dialog .box_bottom_row .box_left{
+  position: absolute;
+  right: 0;
+  left: auto;
+  background: transparent url(/css/local/images/darkgrey_box/top_right_corner.png) no-repeat scroll right bottom;
+}
+
+.dialog .box_title_row {
+}
+
+.dialog .box_title_row .box_title {
+}
+
+.dialog .box_bottom_row {
+  position: relative;
+  top: 10em;
+}
+#del_dialog .box_bottom_row {
+  top: 23em;
+}
+.dialog .box_footer_row {
+  width:100%; 
+}
+
+.dialog .box_bottom_row .box_left {
+  background: transparent url(/css/local/images/darkgrey_box/bottom_right_corner.png) no-repeat scroll left top;
+} 
+
+.dialog .box_bottom_row .box_right {
+  background: transparent url(/css/local/images/darkgrey_box/bottom_left_corner.png) no-repeat scroll right top;
+}
+
+.dialog .buttons {
+  padding: 2%;
+  position: absolute;
+  width: 96%;
+  bottom: 1em;
+  height: 2em;
+}
+
+.dialog .buttons a {
+  padding: 3px 1ex;
+  /*padding-left: 1ex;*/
+  margin: 4px;
+  font-size: 1.2em;
+  font-weight: bold;
+  /*
+  border-top: 2px solid #ddd;
+  border-left: 2px solid #ddd;
+  border-right: 2px solid #333;
+  border-bottom: 2px solid #333;
+  background: #999;
+  */
+  color: #999;
+}
+
+.dialog .buttons a:visited {
+  text-decoration: none;
+}
+
+.dialog .buttons a:hover {
+  text-decoration: none;
+  color: #666;
+  /*background: #dd77dd;*/
+}
+
+/* rlihm pfusch */
+
+/*
+
+       <div class="grey_box">
+        <div class="box_top_row">
+         <div class="box_left"></div>
+         <div class="box_right"></div>
+        </div>
+        <div class="box_title_row">
+         <div class="box_title">
+          openSUSE
+         </div>
+        </div>
+        <div class="box_content">
+        
+        <!-- content --> 
+         
+        </div>
+        <div class="box_bottom_row">
+         <div class="box_left"></div>
+         <div class="box_right"></div>
+        </div>
+       </div>
+       <br />
+
+*/
+
+
+

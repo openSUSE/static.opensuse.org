@@ -1,0 +1,64 @@
+0. create the needed directories:
+[[[
+install -o root -g root -m 0755 -dD \
+    /srv/www/vhosts/opensuse.org/shared \
+    /var/log/apache2/opensuse.org/wiki/
+
+install -o wwwrun -g www -m 0750 -d \
+   /srv/www/vhosts/opensuse.org/shared/{tmp,files,sessions} \
+   /srv/www/vhosts/opensuse.org/shared/files/{images,math}
+]]]
+
+1. checkout the wiki from svn
+[[[
+cd /srv/www/vhosts/opensuse.org/shared
+svn co svn://hydrogen.suse.de/opensuse-wiki/trunk htdocs
+]]]
+
+2. symlink apache config
+[[[
+ln -s \
+    /srv/www/vhosts/opensuse.org/shared/htdocs/farm/farm.apache.conf \
+    /etc/apache2/vhosts.d/000-opensuse-wikifarm.conf
+]]]
+
+3. copy db.php.sample to db.php
+
+4. edit the db.php
+   - please dont use the same user for administrative tasks
+     and the normal wiki user
+
+5. copy all.dblist.sample to all.dblist
+
+6. one line per db. our pattern atm is opensuse_$lang
+
+7. add user and DB to mysql (e.g. with phpMyAdmin)
+
+8. Create tables in the databases:
+   cd /srv/www/vhosts/opensuse.org/shared/htdocs/maintenance/mysql5
+   mysql -u opensuse -p opensuse_de < tables.sql
+
+9. adjust farm/LocalSettings.php:
+   -   require_once('./extensions/iChainAuthenticationPlugin.php');
+   +   # require_once('./extensions/iChainAuthenticationPlugin.php');
+   -   $wgAuth = new iChainAuthenticationPlugin();
+   +   #$wgAuth = new iChainAuthenticationPlugin();
+   -   $wgMainCacheType      = CACHE_MEMCACHED;
+   +   $wgMainCacheType      = CACHE_ANYTHING;
+   -   $wgParserCacheType = CACHE_MEMCACHED;
+   +   $wgParserCacheType = CACHE_ANYTHING;
+
+10. adjust farm/InitialiseSettings.php
+   -         'default'       => 'http://$lang.$site.org',
+   +         'default'       => 'http://$lang' .'stage' .'.$site.org',
+
+11. Create Sysop. Bureaucrat:
+    - Add a user to the wiki using the wiki interface
+    - login to the database:
+      mysql -u opensuse -popensuse opensuse_de
+    - Find out it's ID:
+      SELECT uid FROM user WHERE user_name='<USER>';
+    - make sysop
+      INSERT INTO user_groups (ug_user, ug_group) VALUES (<ID>, 'sysop');
+    - make bureaucrat
+      INSERT INTO user_groups (ug_user, ug_group) VALUES (1, 'bureaucrat');

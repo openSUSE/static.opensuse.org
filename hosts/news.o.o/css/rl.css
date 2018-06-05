@@ -1,0 +1,24 @@
+/*
+My CSS for testing things.
+*/
+
+html,
+body {
+/*border: 1px solid navy;*/
+/*	border: 1px;*/
+}
+
+#main {
+/*	border: 1px solid #999;*/
+/*	border: 1px;*/
+/*position: absolute;*/
+}
+
+#col1 {
+/*	border: 1px solid green;*/
+/*	border: 1px;*/
+}
+
+#sidebar {
+/*	display: none;*/
+}

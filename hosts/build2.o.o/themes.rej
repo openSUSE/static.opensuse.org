@@ -1,0 +1,5 @@
+--- src/webui/public/themes
++++ src/webui/public/themes
+@@ -1 +1 @@
+-Subproject commit 56e00008acfaf820e3b742f308087aece4c40312
++Subproject commit 40dbb9c62f5a4e44a634cdfcf80ed26884d61c41

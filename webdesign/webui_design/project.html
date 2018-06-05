@@ -1,0 +1,384 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+    <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/script.js" type="text/javascript" charset="utf-8"></script>
+    <title>
+      OBS Webclient V2.0
+    </title>
+  </head>
+  <body>
+    <!-- Notificatioon = = = = = = = = = = = = = = = = = = = = = = = =  -->
+    <div id="note" class="">
+      <p>
+        This is a short system notification.
+      </p>
+    </div><!-- /Notificatioon = = = = = = = = = = = = = = = = = = = = = = = = -->
+    <div id="head">
+      <div id="head-contet">
+        <a name="top" id="top"></a>
+        <div id="logo-wrapper" class="col4">
+          <a href="/" title="Home - Dashboard"><img src="images/logo_obs.png" width="71" height="38" alt="Logo Obs" /></a>
+        </div>
+        <div id="navigation-wrapper" class="col8">
+          <form action="navigation-search-form" method="get" accept-charset="utf-8">
+            <p>
+              <input id="search" type="text" name="search" value="" />
+              <input class="searchbutton" type="image" src="images/magnifier_white.png" title="run search" />
+              <input class="button hidden" type="submit" value="Search" />
+            </p>
+          </form>
+          <ul id="main-navigation" class="navigation">
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li><a class="active-page" href="browse.html">Browse</a></li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- Personal Navigation  = = = = = = = = = = = = = = = = = = = = = = -->
+    <div id="personal-navigation-wrapper">
+      
+      <ul id="breadcrumb-navigation" class="navigation">
+        
+        <li><a href="">root</a></li>
+        <li>&rsaquo;</li>
+        <li><a href="">Project</a></li>
+        <li>&rsaquo;</li>
+        <li><a href="">Package</a></li>
+        <li>&rsaquo;</li>
+        <li><a href="">Action</a></li>
+        
+      </ul>
+      
+      <ul id="personal-navigation" class="navigation">
+        <li><a id="watchlist-trigger" href="" name="watchlist-trigger">Watchlist</a></li>
+        <li><a id="settings-trigger" href="#obs_settings" name="settings-trigger">Settings</a></li>
+        <li><a id="logout-trigger" href="" name="logout-trigger">Logout</a></li>
+      </ul>
+    </div><!-- /Personal Navigation  = = = = = = = = = = = = = = = = = = = = = = -->
+    <!-- Content Area  = = = = = = = = = = = = = = = = = = = = = = = = = = -->
+    <div id="main-content-wrapper">
+      <div id="content-head" class="col12">
+        <h1 id="content-head">
+          Projects
+        </h1>
+      </div>
+      <!-- Left Column = = = = = = = = = = = = = = = = = = = = = = = = = = -->
+      <div id="content_left" class="col8">
+        Left
+      </div>
+      <!-- /Left Column = = = = = = = = = = = = = = = = = = = = = = = = = = -->
+      <!-- Right Column = = = = = = = = = = = = = = = = = = = = = = = = = = -->
+      <div id="content_right" class="col4">
+        
+        <div id="multi-list" class="widget">
+          <div class="widget-head">
+            <h2><a href="#">Build Repositories <span>more &rarr;</span></a></h2>
+            <ul class="widget-controle">
+              <li><a class="trigger-config widget-config" title="Edit widget"><span>Edit</span></a></li>
+            </ul>
+          </div>
+          <!-- Configuration Menu = = = = = = = = = = = = = = = = = = = = =-->
+          <div id="" class="config-menu">
+            <div class="config-menu-content">
+              <form action="" method="get">
+                <ul class="section">
+                  <li title="some_content">
+                    <input type="checkbox" value="" id="option-1" name=""/>
+                    <label lang="EN" for="option-1">Option</label>
+                  </li>
+                  <li title="some_content">
+                    <input type="checkbox" value="" id="option-1" name=""/>
+                    <label lang="EN" for="option-1">Option</label>
+                  </li>
+                  <li title="some_content">
+                    <input type="checkbox" value="" id="option-1" name=""/>
+                    <label lang="EN" for="option-1">Option</label>
+                  </li>
+                  <li title="some_content">
+                    <input type="checkbox" value="" id="option-1" name=""/>
+                    <label lang="EN" for="option-1">Option</label>
+                  </li>
+                  <li title="some_content">
+                    <input type="checkbox" value="" id="option-1" name=""/>
+                    <label lang="EN" for="option-1">Option</label>
+                  </li>
+                  <li title="some_content">
+                    <input type="checkbox" value="" id="option-1" name=""/>
+                    <label lang="EN" for="option-1">Option</label>
+                  </li>
+                  <li title="some_content">
+                    <input type="checkbox" value="" id="option-1" name=""/>
+                    <label lang="EN" for="option-1">Option</label>
+                  </li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="confirmation">
+                  <input type="submit" class="config-close button" value="Save"/>
+                  <input type="button" value="Cancel" class="cancel button button-dark"/>
+                </p>
+              </form>
+            </div>
+          </div>
+          <!-- /Configuration Menu = = = = = = = = = = = = = = = = = = = = -->
+          <div class="widget-content-head">
+            <h3>Repositories <span>5 | 23</span></h3>
+            <div class="list-control">
+              <a class="add-trigger size-14" title="Add Item to List" name="add_item"> <span>Add</span></a>
+              <a class="remove-trigger size-14" title="Remove Item from List" name="remove_item"> <span>Remove</span></a>
+            </div>
+          </div>
+          <div class="widget-content">
+
+            <ul class="keyword-list">
+              <li>
+                <a href="#repo" id="repo-CentOS" class="open-dialogue">CentOS</a>
+                <a href="#disabled" class="switch-trigger enabled"><span><em>disabled</em></span></a>
+              </li>
+              <li>
+                <a href="#repo" id="repo-openSUSE" class="open-dialogue">openSUSE</a>
+                <a href="#enabled" class="switch-trigger enabled"><span><em>disabled</em></span></a>
+              </li>
+              <li>
+                <a href="#repo" id="repo-Fedora" class="open-dialogue">Fedora</a>
+                <a href="#enable" class="switch-trigger enabled"><span><em>enabled</em></span></a>
+              </li>
+              <li>
+                <a href="#repo" id="repo-SLED" class="open-dialogue">SLED</a>
+                <a href="#disabled" class="switch-trigger enabled"><span><em>disabled</em></span></a>
+              </li>
+              <li>
+                <a href="#repo" id="repo-Ubuntu" class="open-dialogue">Ubuntu</a>
+                <a href="#disabled" class="switch-trigger enabled"><span><em>disabled</em></span></a>
+              </li>
+              <li>
+                <a href="#repo" id="repo-Debian" class="open-dialogue">Debian</a>
+                <a href="#enabled" class="switch-trigger enabled"><span><em>enabled</em></span></a>
+              </li>
+              <li>
+                <a href="#repo" id="repo-Yellow_Dog" class="open-dialogue">Yellow Dog</a>
+                <a href="#disabled" class="switch-trigger enabled"><span><em>disabled</em></span></a>
+              </li>
+            </ul>
+
+          </div>
+          <div class="widget-footer">
+            <div class="widget-paginator">
+              <a class="left-trigger" name="remove_item"> <span>Back</span></a>
+              <a class="right-trigger" name="remove_item"> <span>Next</span></a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <!-- /Right Column = = = = = = = = = = = = = = = = = = = = = = = = = =-->
+    </div><!-- /Content Area  = = = = = = = = = = = = = = = = = = = = = = = = =  -->
+    <div id="footer">
+      <div id="footer-main-content">
+        <div id="footer-navigation" class="col10">
+          <strong>Activity</strong>
+          <ul>
+            <li><a href="#">New Project</a></li>
+            <li class="hotword-spacer">|</li>
+            <li><a href="#">Manage Project</a></li>
+            <li class="hotword-spacer">|</li>
+            <li><a href="browse.html">Browse</a></li>
+            <li class="hotword-spacer">|</li>
+            <li><a href="#">Tags</a></li>
+          </ul>
+          <hr />
+          <strong>Projects</strong>
+          <ul>
+            <li><a href="#">Your Projects</a></li>
+            <li class="hotword-spacer">|</li>
+            <li><a href="#">Your Packages</a</li>
+            <li class="hotword-spacer">|</li>
+            <li><a href="#">Watchlist</a>
+            </li>
+            <li class="hotword-spacer">|</li>
+            <li><a href="#">Groups</a></li>
+          </ul>
+          <hr />
+          <strong>Account</strong>
+          <ul>
+            <li><a href="#">Your Profile</a></li>
+            <li class="hotword-spacer">|</li>
+            <li><a href="#">Theme</a></li>
+            <li class="hotword-spacer">|</li>
+            <li><a href="#">Widgets</a></li>
+          </ul>
+          <hr />
+          <strong>Help</strong>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li class="hotword-spacer">|</li>
+            <li><a href="#">Documentation</a></li>
+            <li class="hotword-spacer">|</li>
+            <li><a href="#">Sitemap</a></li>
+          </ul>
+        </div>
+        <div id="footer-sponsors" class="col2">
+          <a href="#">Sponsors</a>
+        </div>
+        <div id="footer-copyright" class="col12">
+          <a href="http://www.novell.com">Founded by Novell Inc.</a>
+        </div>
+      </div><!-- TODO: Add back to top link! -->
+      <!-- <a href="#">back to top</a> -->
+    </div>
+    
+    <!-- Layer ========================================================== -->
+    
+    <!-- Layer = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = -->
+    
+    <div id="" class="widget-detail-layer">
+      
+      <div class="highlight-border"></div>
+      <div class="detail-content-wrapper">
+        <h2>RepoName</h2>
+        <div class="detail-content">
+
+          <ul class="keyword-list">
+            <li>
+              <a href="#arch" id="" class="">i568</a>
+              <a href="#disabled" class="switch-trigger disabled"><span><em>disabled</em></span></a>
+            </li>
+            <li>
+              <a href="#arch" id="" class="">x86_64</a>
+              <a href="#enabled" class="switch-trigger enabled"><span><em>disabled</em></span></a>
+            </li>
+            <li>
+              <a href="#arch" id="" class="">PPC</a>
+              <a href="#disabled" class="switch-trigger disabled"><span><em>disabled</em></span></a>
+            </li>
+          </ul>
+          
+        </div>
+
+        <div class="text-center pos-bottom dialogue-footer">
+          <a href="#done" class="button close-trigger">Done</a>
+        </div>
+        
+      </div>
+      <div id="detail-tip" class="right-tip"></div>
+    </div>
+
+    <!-- /Layer = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = -->
+    
+    <div id="layer">
+      <div id="layer-content-wrapper">
+        <div id="layer-head">
+          <a id="layer-close" href="#" name="layer-close">close</a>
+        </div>
+        <div id="layer-content" class="col12">
+          <h1>
+            Content
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+        <div id="layer-footer">
+          <a id="button-ok" class="button" href="#" name="button-ok">OK</a> <a id="button-save" class="button" href="#" name="button-save">Save</a> <a class="button" href="#">Done</a> <a id="button-accept" class="button" href="#" name="button-accept">Accept</a> <a id="button-cancel" class="button button-dark" href="#" name="button-cancel">Cancel</a>
+        </div>
+      </div>
+    </div>
+    <div id="grid-layer">
+      <div id="grid-main">
+        <div class="col1">
+          ONE
+        </div>
+        <div class="col1">
+          ONE
+        </div>
+        <div class="col1">
+          ONE
+        </div>
+        <div class="col1">
+          ONE
+        </div>
+        <div class="col1">
+          ONE
+        </div>
+        <div class="col1">
+          ONE
+        </div>
+        <div class="col1">
+          ONE
+        </div>
+        <div class="col1">
+          ONE
+        </div>
+        <div class="col1">
+          ONE
+        </div>
+        <div class="col1">
+          ONE
+        </div>
+        <div class="col1">
+          ONE
+        </div>
+        <div class="col1">
+          ONE
+        </div>
+        <div id="grid-colTest">
+          <div class="col2">
+            2
+          </div>
+          <div class="col4">
+            4
+          </div>
+          <div class="col6">
+            6
+          </div>
+          <div class="col3">
+            3
+          </div>
+          <div class="col5">
+            5
+          </div>
+          <div class="col4">
+            4
+          </div>
+          <div class="col12">
+            12
+          </div>
+          <div class="col4">
+            4
+          </div>
+          <div class="col8">
+            8
+          </div>
+          <div class="col7">
+            7
+          </div>
+          <div class="col5">
+            5
+          </div>
+          <div class="col10">
+            10
+          </div>
+          <div class="col2">
+            2
+          </div>
+        </div>
+      </div>
+    </div><!-- TODO: remove this before release -->
+    <div id="dev-controle">
+      D <a id="note-dev-trigger" name="note-dev-trigger">.Note</a> <a id="layer-dev-trigger" name="layer-dev-triger">.Layer</a> <!-- <a id="conf-dev-trigger" name="layer-dev-triger">Config</a> -->
+       <a id="grid-dev-trigger" name="layer-dev-triger">.Grid 1</a>
+    </div><!-- / remove this before release -->
+  </body>
+</html>

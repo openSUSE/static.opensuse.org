@@ -1,0 +1,101 @@
+/*
+**
+**  Funktion:  Provides styles for a layer based dialog
+**  Authors:   Robert Lihm <rlihm@ironicartists.com>
+**  License:   CC <<p></p>see copyright/COPYRIGHT>
+**
+*/
+
+/* Description
+** 
+** 
+**
+*/
+
+
+html,
+body {
+  font: 100% sans-serif;
+  text-shadow: 0 1px 3px #666;
+}
+
+a { color: #690;}
+
+h1, p { color: #666; }
+
+#dialog_main_wrapper {
+	display: block;
+	position: absolute;
+	
+	top:0;
+	right: auto;
+	bottom: auto;
+	left:0;
+	
+	width: 100%;
+	height: 100%;
+	
+	margin: 0;
+}
+
+#vspacer,
+#dialog_wrapper {
+	display: block;
+	position: relative;
+}
+
+#vspacer {
+	height: 50%;
+	width: 0;
+	float: left;
+}
+
+#dialog_wrapper {
+	clear:left;
+	margin: 0 auto;
+}
+
+/*
+** Customisation
+** 
+*/
+
+#vspacer {
+	width: 0;
+	margin-bottom: -10em;
+}
+
+#dialog_wrapper {
+	width: 300px;
+	height: 300px;
+}
+
+/* Colours & Backgrounds */
+
+body {
+	background: #DDD url('images/bg1.gif') repeat fixed top left;
+}
+
+#dialog_main_wrapper {
+/*	background: transparent url('images/bg2.png') repeat fixed top left;*/
+	
+/*	display: none;*/
+	
+	/* CSS 3 Style -- no propper support in all browsers */
+	/*
+	opacity: 1.5;
+	-moz-opacity: 1.5;
+	filter:alpha(opacity=150);
+	*/
+}
+
+#dialog_wrapper {
+
+}
+
+#dialog_wrapper #dialog_content {
+	color: black;
+	opacity: 2;
+	-moz-opacity: 2;
+	filter:alpha(opacity=200);
+}

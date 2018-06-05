@@ -1,0 +1,152 @@
+/*
+**
+**  $Id: $
+**
+**  Funktion:  Provides styles only needed on dowwnload.openSUSE.org
+**  Authors:   Frank Sundermeyer <fs@opensuse.org>
+**             Robert Lihm <rlihm@opensuse.org>
+**  License:   see copyright/COPYRIGHT
+*/
+
+#sponsors {
+    text-align: center;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #336699;
+}
+.navlist {
+    list-style-image: url(../common/images/liDot_double_blue.png);
+}
+.show {
+    display: inline;
+}
+.hide {
+    display: none;
+}
+/*-------------------*
+* Download Home page *
+*--------------------*/
+
+#media_type,
+#protocol {
+    margin-bottom: 10px;
+}
+#architecture label {
+    display: block; 
+}
+#protocol label,
+#media_type label {
+    margin: 1px 2em 1px 0;
+}
+#architecture label {
+    margin: 1px 0;
+}
+#architecture label,
+#protocol label,
+#media_type label {
+    border: 1px solid #fff;
+    padding: 6px;
+    cursor: pointer;
+}
+#architecture label:hover,
+#protocol label:hover,
+#media_type label:hover {
+    border-color: #eee;
+    background-color: #fcfcfc;
+}
+#architecture label.selected,
+#protocol label.selected,
+#media_type label.selected {
+    font-weight: bold;
+    background-color: #f6f6f6;
+    border-color: #eee;
+}
+.media {
+    margin-bottom: 1em;
+}
+.media h3 {
+    font-size: 1em;
+    color: #666;
+}
+.media img {
+    margin-right: 5px;
+}
+.media_description {
+    margin: -1em 0 1em;
+    font-weight: normal;
+    color: #999;
+    font-size: 0.8em;
+}
+.dl_link {
+    margin: .8em 0 0 31px;
+    text-indent: -31px;
+}
+label.selected .arch_eg {
+    font-weight: normal;
+}
+.eg,
+.arch_eg {
+    font-size: 0.8em;
+}
+.arch_eg {
+    margin-left: 2em;
+    display: block;
+}
+.info_text {
+    font-weight: normal;
+    font-size: 0.95em;
+}
+.helplink {
+    position: relative:
+    top: .3em;
+    float: right;
+    margin-right: .3em;
+    font-weight: bold;
+}
+
+#bodyContent
+{
+  min-height: 300px;
+}
+
+.pagination {
+  padding: 3px;
+  margin: 3px;
+  text-align: center;
+}
+.pagination a {
+  padding: 2px 5px 2px 5px;
+  margin: 2px;
+  /*border: 1px solid #aaaadd;*/
+  text-decoration: none !important;
+  color: #000099;
+}
+.pagination a:hover, .pagination a:active {
+  /*border: 1px solid #000099;*/
+  background-color:#F6F6F6;
+  color: #000;
+}
+.pagination span.current {
+  padding: 2px 5px 2px 5px;
+  margin: 2px;
+  /*border: 1px solid #000099;*/
+  font-weight: bold;
+  /*background-color: #000099;*/
+  /*color: #FFF;*/
+  color: #333;
+}
+
+.pagination span.disabled {
+  padding: 2px 5px 2px 5px;
+  margin: 2px;
+  /*border: 1px solid #eee;*/
+  color: #ddd;
+}
+
+.pagination span.disabled img {
+  display: none;
+}
+
+#contentarea a {
+  text-decoration: none !important;
+}

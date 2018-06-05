@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+    <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/script.js" type="text/javascript" charset="utf-8"></script>
+    <title>
+      OBS Webclient V2.0
+    </title>
+  </head>
+  <body>
+    <!-- Notificatioon = = = = = = = = = = = = = = = = = = = = = = = =  -->
+    <div id="note" class="">
+      <p>
+        This is a short system notification.
+      </p>
+    </div><!-- /Notificatioon = = = = = = = = = = = = = = = = = = = = = = = = -->
+    <div id="head">
+      <div id="head-contet">
+        <a name="top" id="top"></a>
+        <div id="logo-wrapper" class="col4">
+          <a href="/" title="Home - Dashboard"><img src="images/logo_obs.png" width="71" height="38" alt="Logo Obs" /></a>
+        </div>
+        <div id="navigation-wrapper" class="col8">
+          <form action="navigation-search-form" method="get" accept-charset="utf-8">
+            <p>
+              <input id="search" type="text" name="search" value="" />
+              <input class="searchbutton" type="image" src="images/magnifier_white.png" title="run search" />
+              <input class="button hidden" type="submit" value="Search" />
+            </p>
+          </form>
+          <ul id="main-navigation" class="navigation">
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li><a class="active-page" href="browse.html">Browse</a></li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- Personal Navigation  = = = = = = = = = = = = = = = = = = = = = = -->
+    <div id="personal-navigation-wrapper">
+      <ul id="personal-navigation" class="navigation">
+        <li><a id="watchlist-trigger" href="" name="watchlist-trigger">Watchlist</a></li>
+        <li><a id="settings-trigger" href="#obs_settings" name="settings-trigger">Settings</a></li>
+        <li><a id="logout-trigger" href="" name="logout-trigger">Logout</a></li>
+      </ul>
+    </div><!-- /Personal Navigation  = = = = = = = = = = = = = = = = = = = = = = -->
+    <!-- Content Area  = = = = = = = = = = = = = = = = = = = = = = = = = = -->
+    <div id="main-content-wrapper">
+      <div id="content-head" class="col12">
+        <h1 id="content-head">
+          _Plain
+        </h1>
+      </div><!-- Left Column = = = = = = = = = = = = = = = = = = = = = = = = = = -->
+      <div id="content_left" class="col8">
+        
+      </div>
+      <!-- /Left Column = = = = = = = = = = = = = = = = = = = = = = = = = = -->
+      <!-- Right Column = = = = = = = = = = = = = = = = = = = = = = = = = = -->
+      <div id="content_right" class="col4"></div><!-- /Right Column = = = = = = = = = = = = = = = = = = = = = = = = = =-->
+    </div><!-- /Content Area  = = = = = = = = = = = = = = = = = = = = = = = = =  -->
+    <div id="footer">
+      <div id="footer-main-content">
+        <div id="footer-navigation" class="col10">
+          <strong>Activity</strong>
+          <ul>
+            <li><a href="#">New Project</a></li>
+            <li class="hotword-spacer">|</li>
+            <li><a href="#">Manage Project</a></li>
+            <li class="hotword-spacer">|</li>
+            <li><a href="browse.html">Browse</a></li>
+            <li class="hotword-spacer">|</li>
+            <li><a href="#">Tags</a></li>
+          </ul>
+          <hr />
+          <strong>Projects</strong>
+          <ul>
+            <li><a href="#">Your Projects</a></li>
+            <li class="hotword-spacer">|</li>
+            <li><a href="#">Your Packages</a</li>
+            <li class="hotword-spacer">|</li>
+            <li><a href="#">Watchlist</a>
+            </li>
+            <li class="hotword-spacer">|</li>
+            <li><a href="#">Groups</a></li>
+          </ul>
+          <hr />
+          <strong>Account</strong>
+          <ul>
+            <li><a href="#">Your Profile</a></li>
+            <li class="hotword-spacer">|</li>
+            <li><a href="#">Theme</a></li>
+            <li class="hotword-spacer">|</li>
+            <li><a href="#">Widgets</a></li>
+          </ul>
+          <hr />
+          <strong>Help</strong>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li class="hotword-spacer">|</li>
+            <li><a href="#">Documentation</a></li>
+            <li class="hotword-spacer">|</li>
+            <li><a href="#">Sitemap</a></li>
+          </ul>
+        </div>
+        <div id="footer-sponsors" class="col2">
+          <a href="#">Sponsors</a>
+        </div>
+        <div id="footer-copyright" class="col12">
+          <a href="http://www.novell.com">Founded by Novell Inc.</a>
+        </div>
+      </div><!-- TODO: Add back to top link! -->
+      <!-- <a href="#">back to top</a> -->
+    </div>
+    <div id="layer">
+      <div id="layer-content-wrapper">
+        <div id="layer-head">
+          <a id="layer-close" href="#" name="layer-close">close</a>
+        </div>
+        <div id="layer-content" class="col12">
+          <h1>
+            Content
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+        <div id="layer-footer">
+          <a id="button-ok" class="button" href="#" name="button-ok">OK</a> <a id="button-save" class="button" href="#" name="button-save">Save</a> <a class="button" href="#">Done</a> <a id="button-accept" class="button" href="#" name="button-accept">Accept</a> <a id="button-cancel" class="button button-dark" href="#" name="button-cancel">Cancel</a>
+        </div>
+      </div>
+    </div>
+    <div id="grid-layer">
+      <div id="grid-main">
+        <div class="col1">
+          ONE
+        </div>
+        <div class="col1">
+          ONE
+        </div>
+        <div class="col1">
+          ONE
+        </div>
+        <div class="col1">
+          ONE
+        </div>
+        <div class="col1">
+          ONE
+        </div>
+        <div class="col1">
+          ONE
+        </div>
+        <div class="col1">
+          ONE
+        </div>
+        <div class="col1">
+          ONE
+        </div>
+        <div class="col1">
+          ONE
+        </div>
+        <div class="col1">
+          ONE
+        </div>
+        <div class="col1">
+          ONE
+        </div>
+        <div class="col1">
+          ONE
+        </div>
+        <div id="grid-colTest">
+          <div class="col2">
+            2
+          </div>
+          <div class="col4">
+            4
+          </div>
+          <div class="col6">
+            6
+          </div>
+          <div class="col3">
+            3
+          </div>
+          <div class="col5">
+            5
+          </div>
+          <div class="col4">
+            4
+          </div>
+          <div class="col12">
+            12
+          </div>
+          <div class="col4">
+            4
+          </div>
+          <div class="col8">
+            8
+          </div>
+          <div class="col7">
+            7
+          </div>
+          <div class="col5">
+            5
+          </div>
+          <div class="col10">
+            10
+          </div>
+          <div class="col2">
+            2
+          </div>
+        </div>
+      </div>
+    </div><!-- TODO: remove this before release -->
+    <div id="dev-controle">
+      D <a id="note-dev-trigger" name="note-dev-trigger">.Note</a> <a id="layer-dev-trigger" name="layer-dev-triger">.Layer</a> <!-- <a id="conf-dev-trigger" name="layer-dev-triger">Config</a> -->
+       <a id="grid-dev-trigger" name="layer-dev-triger">.Grid 1</a>
+    </div><!-- / remove this before release -->
+  </body>
+</html>

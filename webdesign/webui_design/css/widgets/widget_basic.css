@@ -1,0 +1,513 @@
+.widget {
+  margin-bottom: 2em;
+  text-decoration: none;
+  border: 3px dotted transparent;
+}
+.widget-head,
+.widget-content-head,
+.widget-content,
+.widget-footer {
+  margin: 2px 0;
+  clear: both;
+  overflow:hidden;
+}
+.widget h2 {
+  color: #909FAB;
+  font-size:1.2em;
+  margin: 0 0 2px;
+  }
+.widget h3 {
+  margin: 3px 0;
+  float: left;
+  font-size:0.8em;
+  font-weight:bold;
+  color: #979797;
+}
+
+.widget-head h2 {float: left;}
+.widget-content-head h3 span,
+.widget-content-head-2 h3 span {
+  font-weight: normal;
+  margin: 0 0.5em;
+}
+.widget-head {
+}
+
+.widget-head:hover { /* hightlight possibility of action */
+  cursor: move;
+}
+
+.widget-head h2 a,
+.widget-head h2 a * {
+  text-decoration: none;
+}
+
+.widget-head h2 a span {
+  color: #363636;
+  font-size: 0.5em;
+  font-weight: normal;
+  display: none;
+}
+.widget-head h2 a:hover span {
+  display: inline;
+}
+
+.widget ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  list-style-position: inside;
+}
+
+.widget-controle {
+  width: auto;
+  margin: 3px 0 0;
+  float: right;
+}
+.widget-controle li {
+  float: left;
+  margin-left: 3px;
+}
+.widget-controle a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+.widget-controle a span {display: none;} /*for accessibility*/
+
+.widget-content-head,
+.widget-content-head-2,
+.widget-footer {overflow: hidden;}
+
+.widget-content-head {
+  border-top: 1px solid #eee;
+  padding-top: 3px;
+}
+
+.widget-content-head-2 {
+  margin-top: .5em;
+}
+
+.widget ul {
+  padding: 0;
+  margin: 0.5em 0 0;
+  font-size: 0.7em;
+}
+.widget-content li {
+  list-style: none inside;
+  margin-bottom: 2px;
+}
+.widget-content  li a {
+  display: block;
+  width: 100%;
+  padding: 3px 0;
+  margin: 0 5px;
+  color: #666;
+}
+.widget-content li a:hover {
+  text-decoration: none;
+  color: #f6f6f6;
+  color: #222;
+}
+.widget-content li span {
+    margin-right: 0.5em;
+}
+.widget-content li span.widget-row-number{
+
+}
+
+.widget p {
+  font-size: 0.8em;
+}
+.widget p.confirmation {
+  text-align: right;
+}
+.widget p.confirmation * {
+  margin-left: 1em;
+}
+
+
+.widget .list-control,
+.widget .widget-paginator {
+  float: right;
+  width: auto;
+}
+
+.widget .widget-paginator {}
+
+.widget-footer {
+  border-top:1px solid #F5F5F5;
+  border-bottom: 1px solid #eee;
+}
+
+/* Aggregator Widget ====================================================== */
+.widget .widget-bs-aggregator {
+  
+}
+
+.widget-content ul .widget-bs-aggregator {
+  margin: 0 0 0.5em;
+}
+
+.widget .widget-bs-aggregator li,
+.widget .widget-bs-aggregator li a {
+  display: block;
+  width: 16px;
+  height: 16px;
+  width: 12px;
+  height: 12px;
+}
+.widget .widget-bs-aggregator li {
+  float: left;
+  margin: 2px;
+}
+.widget .widget-bs-aggregator li a {
+  margin: 0;
+  padding: 0;
+}
+.widget .widget-bs-aggregator li span { /*for accessibility*/
+  margin: 0;
+  display: none;
+}
+.widget .widget-bs-aggregator li a:hover span {
+}
+
+/*=== Colors ===============================================================*/
+
+/*
+Base Colour: #909FAB
+Idea behind the colours: Take normal colour + 46 Saturation and get the hover colour. 
+
+
+Colors:
+
+light grey:   #cccccc
+hover:        #aaaaaa
+
+grey:         #999999
+hover:        #777777
+
+blue:         #909FAB
+hover:        #6487a9
+
+red:          #d9bcbb
+hover:        #cc807b
+
+green:        #d7ddbd
+hover:        #d0db82
+
+violet:       #cabcdd
+hover:        #9d7fda
+
+*/
+
+.blocked {background-color: #d9bcbb;} /* red */
+.blocked:hover {background-color: #cc807b;}
+
+.broken {background-color: #d9bcbb;} /* red */
+.broken:hover {background-color: #cc807b;}
+
+.building {background-color: #909FAB;} /* blue */
+.building:hover {background-color: #6487a9;}
+
+.disabled {background-color: #999;} /* gray */
+.disabled:hover {background-color: #777;}
+
+.dispatched {background-color: #909FAB;} /* blue */
+.dispatched:hover {background-color: #6487a9;}
+
+.excluded {background-color: #d9bcbb;} /* red */
+.excluded:hover {background-color: #cc807b;}
+
+.expansion-error {background-color: #d9bcbb;} /* red */
+.expansion-error:hover {background-color: #cc807b;}
+
+.failed {background-color: #d9bcbb;} /* red */
+.failed:hover {background-color: #cc807b;}
+
+.finished {background-color: #d7ddbd;} /* green */
+.finished:hover {background-color: #d0db82;}
+
+.scheduled {background-color: #cabcdd;} /* violet */
+.scheduled:hover {background-color: #9d7fda;}
+
+.succeeded {background-color: #d7ddbd;} /* green */
+.succeeded:hover {background-color: #d0db82;}
+
+.unknown {background-color: #ccc;} /* light grey */
+.unknown:hover {background-color: #aaa;}
+
+/*=== /Colors ==============================================================*/
+
+/* /Aggregator Widget ===================================================== */
+
+/* Reposiory Widget ======================================================= */
+
+.widget-search {
+  display: none;
+  height: 1.4em;
+  margin-top: 5px;
+  padding: 0.2em 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+  
+  background: #909FAB url('../images/nav_gradient_dark2.png') repeat-x scroll 0 0;
+}
+
+.widget-search .input-filter {
+  width: 80%;
+  padding: 0.1em 0.2em;
+  border: 1px solid #eee;
+  border-left: none;
+  border-right: none;
+/*  background: #fff url('../images/nav_gradient_dark2.png') repeat-x scroll 0 0;*/
+  color: #666;
+}
+
+.widget-search button {
+  -moz-border-radius-bottomleft:3px;
+  -moz-border-radius-bottomright:3px;
+  -moz-border-radius-topleft:3px;
+  -moz-border-radius-topright:3px;
+  
+  /* Wekbit Browser Roundet Corners */  
+  -webkit-border-bottom-left-radius: 3px 3px;
+  -webkit-border-bottom-right-radius: 3px 3px;
+  -webkit-border-top-left-radius: 3px 3px;
+  -webkit-border-top-right-radius: 3px 3px;
+    border: 1px solid transparent;
+/*    border: 1px solid #ddd;*/
+  background: #eee url('../images/nav_gradient_dark2.png') repeat-x scroll 0 0;
+  margin: 0;
+  color: #767676;
+  cursor: pointer;
+}
+
+/* /Repository Widget ===================================================== */
+
+/* Buttons, Trigger, hover, etc. ========================================== */
+
+/* Interaction Icons 16x16 and general */
+.widget .list-control a,
+.widget .widget-paginator a { 
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin: 2px 5px 0;
+  float: right;
+  overflow: hidden;
+  opacity: 0.9;
+  -moz-opacity: 0.9;
+  filter:alpha(opacity=90);
+  
+  font-size: 0.8em;
+  
+}
+
+.widget .widget-paginator a {
+  float: left;
+  margin: 1px;
+  margin: 0 1px 2px;
+  margin: 1px 2px;
+}
+
+
+/* Interaction Icons 14x14 */
+.widget .list-control a.size-14,
+.widget .widget-paginator a.size-14 {
+  width: 14px;
+  height: 14px;
+  margin: 3px 2px 0;
+}
+
+.widget .list-control span,
+.widget .widget-paginator span {
+  display: none;
+}
+
+/* Interaction Icons 16x16 and general */
+.widget .add-trigger:hover,
+.widget .remove-trigger:hover,
+.widget .up-trigger:hover,
+.widget .down-trigger:hover,
+.widget .right-trigger:hover,
+.widget .left-trigger:hover,
+.widget .remove-trigger:hover {
+  cursor: pointer;
+}
+
+/* Interaction Icons 14x14 and general */
+/*.widget .add-trigger-14:hover,
+.widget .remove-trigger-14:hover {
+  background-position: 0 -14px;
+  cursor: pointer;
+}*/
+/* Vote =================================================================== */
+
+#vote-preview {
+  overflow: hidden;
+  cursor: pointer;
+  height: 3em;
+}
+
+#vote-controle {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: auto;
+  bottom: auto;
+  left: 0;
+  background: #666;
+  background: transparent url('../images/bg_light-white75.png') repeat 0 0;
+}
+
+.prominent-info {
+  
+}
+.prominent-info strong {
+  color: #c00;
+}
+h3.prominent-info {
+ font-size: 1em;
+}
+
+.list-control a.show,
+.list-control a.hide {
+  width: auto;
+}
+
+#vote-preview:hover #vote-controle {
+  display: block;
+}
+
+.vote-bar {
+  margin: 1.5em auto 0;
+  width: 90%;
+}
+
+.widget .vote-bar li {
+  display: block;
+  height: 1em;
+  float: left;
+}
+
+.positiv {
+  background: #d0db82;
+}
+.neutral {
+  background: #ccc;
+}
+.negative {
+  background: #cc807b;
+}
+
+.positiv span,
+.neutral span,
+.negative span {
+  display: none;
+}
+
+div.vote-trigger {
+  width: 114px;
+  margin: 1.5% auto 0;
+}
+a.vote-trigger {
+  display: block;
+  float: left;
+  width: 32px;
+  height: 32px;
+  margin: 0 3px;
+}
+
+#show-details-trigger,
+#hide-details-trigger {
+  width: auto;
+}
+#show-details-trigger .show-details,
+#show-details-trigger .hide-details {
+  cursor: pointer;
+}
+#show-details-trigger .show-details {
+  display: inline;
+}
+#hide-details-trigger .hide-details {
+  display: none;
+}
+
+/* ---- */
+
+.vote-trigger strong {
+  display: none;
+}
+
+.open-details {
+  clear: left;
+}
+#vote-info {
+  display: none;
+}
+#vote-info ul {
+  width: 200px;
+  margin: 0.5em auto; 
+}
+
+#vote-info ul li span {
+  display: block;
+  width: 8em;
+}
+#vote-monitor {
+  margin: 0.5em 0;
+  text-align: center;
+  }
+#vote-monitor img{
+}
+
+/* /Vote ================================================================== */
+
+/* /Buttons, hover, etc. ================================================== */
+
+/* 2-Row Content ========================================================== */
+
+.two-row-head {
+  margin-bottom: 0.3em;
+}
+.two-row-body {
+  border-top: 1px dotted #ddd;
+  clear: left;
+}
+
+/* /2-Row Content ========================================================= */
+
+/* List Style ============================================================= */
+
+.line1,
+.line2 {
+  color: #666;
+}
+
+.line1 {
+  background-color: #f5f5f5;
+}
+.line2 {
+  background-color: inherit;
+}
+
+.line1 a:hover,
+.line2 a:hover {
+  background-color: #c6ced5;
+  color: #fff;
+}
+.value-list {
+  text-align: right;
+}
+.value-list strong {
+  float: left;
+}
+
+/* /List Style ============================================================ */
