@@ -1,0 +1,4 @@
+- webdesign/ comes from git@gitorious.org:opensuse/webdesign.git which is now
+  dead and I didn't find replacement. Also, the following dirs were untracked:
+  - design_concept/theme_o.o-bento-wordpress/
+  - design_concept/theme_o.o-bento/
