@@ -7,3 +7,6 @@
 [submodule "themes"]
 	path = themes
 	url = https://github.com/openSUSE/opensuse-themes
+[submodule "chameleon"]
+	path = chameleon
+	url = https://github.com/openSUSE/opensuse-theme-chameleon
