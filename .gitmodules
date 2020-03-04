@@ -9,4 +9,8 @@
 	url = https://github.com/openSUSE/opensuse-themes
 [submodule "chameleon"]
 	path = chameleon
-	url = https://github.com/openSUSE/opensuse-theme-chameleon
+	url = https://github.com/openSUSE/chameleon.git
+[submodule "chameleon-dev"]
+	path = chameleon-dev
+	url = https://github.com/openSUSE/chameleon.git
+	branch = dev
