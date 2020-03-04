@@ -10,10 +10,6 @@
 [submodule "chameleon"]
 	path = chameleon
 	url = https://github.com/openSUSE/chameleon.git
-[submodule "chameleon-dev"]
-	path = chameleon-dev
-	url = https://github.com/openSUSE/chameleon.git
-	branch = dev
 [submodule "chameleon-2.0"]
 	path = chameleon-2.0
 	url = https://github.com/openSUSE/chameleon.git
