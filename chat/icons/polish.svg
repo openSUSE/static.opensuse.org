@@ -1,0 +1,7 @@
+<svg width="24" height="24" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+ <g id="polish" transform="translate(-500,4)">
+  <rect x="500" y="-4" width="24" height="24" fill="#73ba25"/>
+  <rect x="506" y="2" width="12" height="12" ry="2" fill="#fff"/>
+  <path d="m506 8v4c0 1.108 0.892 2 2 2h8c1.108 0 2-0.892 2-2v-4z" fill="#dc143c"/>
+ </g>
+</svg>

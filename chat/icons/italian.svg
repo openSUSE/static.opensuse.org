@@ -1,0 +1,8 @@
+<svg width="24" height="24" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+ <g id="italian" transform="translate(-452,4)">
+  <rect x="452" y="-4" width="24" height="24" fill="#73ba25"/>
+  <path d="m460 2c-1.108 0-2 0.892-2 2v8c0 1.108 0.892 2 2 2h2v-12z" fill="#009246"/>
+  <path d="m466 2v12h2c1.108 0 2-0.892 2-2v-8c0-1.108-0.892-2-2-2z" fill="#ce2b37"/>
+  <rect x="462" y="2" width="4" height="12" ry="0" fill="#fff"/>
+ </g>
+</svg>
