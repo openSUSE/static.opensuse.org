@@ -14,3 +14,6 @@
 	path = chameleon-2.0
 	url = https://github.com/openSUSE/chameleon.git
 	branch = rel-2.0
+[submodule "artwork"]
+	path = artwork
+	url = https://github.com/openSUSE/artwork.git
