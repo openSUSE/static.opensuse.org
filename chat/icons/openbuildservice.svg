@@ -1,0 +1,8 @@
+<svg version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+ <path id="tumbleweed" d="m0 1e-7v24h24v-24z" fill="#35b9ab"/>
+ <g>
+  <path d="m15.064 5v14.117l4.4364-1.7216-0.25154-3.682-3.4618-1.8279v-5.8526zm-3.4346 1.0487v6.1804l0.63274-0.12656v-4.9851zm-3.4329 1.022-0.0015887 5.8456 0.63424-0.12701v-4.6856z" fill="#d1d1d1" stroke-width=".090384"/>
+  <polygon transform="matrix(.090383 0 0 .090383 -16.751 -19.883)" points="276 362.89 276 298.16 257 309.59 257 366.69 231.74 371.71 224.06 412.45 352 431.5 352 351.5 352 347.69 352 275.3 333 286.73 333 351.49 314 355.29 314 286.73 295 298.16 295 359.09" fill="#fff"/>
+  <text x="221.9915" y="-82.812424" fill="#000000" font-family="sans-serif" font-size="40px" letter-spacing="0px" stroke-width="1px" word-spacing="0px" style="line-height:125%" xml:space="preserve"><tspan x="221.9915" y="-46.031597"/><tspan x="221.9915" y="3.9683959"/></text>
+ </g>
+</svg>
