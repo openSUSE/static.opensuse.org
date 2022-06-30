@@ -1,8 +1,0 @@
-.package_binarylist { 
-  display: none;
-}
-
-table.repostatus td.buildstatus { width: 11ex; }
-table.repostatus td.arch { width: 1%; margin: 1ex 0; }
-table.repostatus td.repo { max-width: 5em; }
-
