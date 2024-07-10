@@ -4,14 +4,3 @@
 [submodule "themes"]
 	path = themes
 	url = https://github.com/openSUSE/opensuse-themes
-[submodule "chameleon"]
-	path = chameleon
-	url = https://github.com/openSUSE/chameleon.git
-[submodule "chameleon-2.0"]
-	path = chameleon-2.0
-	url = https://github.com/openSUSE/chameleon.git
-	branch = rel-2.0
-[submodule "chameleon-3.0"]
-	path = chameleon-3.0
-	url = https://github.com/openSUSE/chameleon.git
-	branch = rel-3.0
