@@ -20,5 +20,5 @@ SPONSORS[4] = new Array("https://en.opensuse.org/Sponsors#NorthC","https://en.op
 SPONSORS[5] = new Array("https://en.opensuse.org/Sponsors#rsync.net","https://en.opensuse.org/images/2/2f/Rsync.png");
 SPONSORS[6] = new Array("https://en.opensuse.org/Sponsors#Core_Backbone","https://en.opensuse.org/images/4/4c/Corebackbone.png");
 SPONSORS[7] = new Array("https://en.opensuse.org/Sponsors#Heinlein_Support","https://en.opensuse.org/images/1/1d/Heinlein-support.png");
-SPONSORS[8] = new Array("https://en.opensuse.org/Sponsors#Marvell","https://en.opensuse.org/images/b/b4/Marvell.png");
+SPONSORS[8] = new Array("https://en.opensuse.org/Sponsors","https://en.opensuse.org/images/b/b4/Marvell.png");
 
