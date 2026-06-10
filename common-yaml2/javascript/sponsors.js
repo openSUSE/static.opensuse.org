@@ -13,7 +13,7 @@ function showSponsor() {
     IMGLINK[5] = new Array("https://en.opensuse.org/Sponsors#rsync.net","https://en.opensuse.org/images/2/2f/Rsync.png");
     IMGLINK[6] = new Array("https://en.opensuse.org/Sponsors#Core_Backbone","https://en.opensuse.org/images/4/4c/Corebackbone.png");
     IMGLINK[7] = new Array("https://en.opensuse.org/Sponsors#Heinlein_Support","https://en.opensuse.org/images/1/1d/Heinlein-support.png");
-    IMGLINK[8] = new Array("https://en.opensuse.org/Sponsors#MARVELL","https://en.opensuse.org/images/b/b4/Marvell.png");
+    IMGLINK[8] = new Array("https://en.opensuse.org/Sponsors#Marvell","https://en.opensuse.org/images/b/b4/Marvell.png");
 
     var INTERVAL = 3; // in seconds
     var RANDOM = Math.floor(Math.random() * IMGLINK.length);
@@ -22,6 +22,5 @@ function showSponsor() {
     document.getElementById("sponsorSlideimg").src   = IMGLINK[RANDOM][1];
 
     setTimeout(showSponsor, INTERVAL * 1000);
-}
 }
 
